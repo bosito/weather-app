@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centerNoAccess {
   display: flex;
   flex-direction: column;
+  font-size: 20px;
   align-items: center;
+  font-weight: bold;
+}
+
+.imageStyle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 200px;
+}
+
+.cardContainer {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.cardPrincipal{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  width: 80%;
+  height: 80%;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.57);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.txtitle,
+.txt {
+  font-size: 20px;
+  color: aliceblue;
+  font-style: italic;
+}
+.txtitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+.containerWeather {
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+  height: 100vh;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #0c2b6e;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+}
+
+.containerWeatherAnimation{
+  transition: 5s;
+  background-color: #ffb100;
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+  height: 100vh;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.containerLottieDay{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100vh;
 }
